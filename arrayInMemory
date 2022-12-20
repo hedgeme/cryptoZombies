@@ -9,3 +9,6 @@ function getArray() external pure returns(uint[] memory) {
 
   return values;
 }
+
+//Note: memory arrays must be created with a length argument (in this example, 3). They currently cannot be resized like 
+//storage arrays can with array.push(), although this may be changed in a future version of Solidity.
