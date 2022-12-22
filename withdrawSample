@@ -7,3 +7,5 @@ contract GetPaid is Ownable {
 
 //It is important to note that you cannot transfer Ether to an address unless that address is of type address payable.
 //But the _owner variable is of type uint160, meaning that we must explicitly cast it to address payable.
+//Once you cast the address from uint160 to address payable, you can transfer Ether to that address 
+//using the transfer function, and address(this).balance will return the total balance stored on the contract.
